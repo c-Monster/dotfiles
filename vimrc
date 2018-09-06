@@ -6,13 +6,6 @@ Plug 'scrooloose/syntastic'
 call plug#end()
 
 " plugin options
-"
-" nerdtree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif " if no files opened (ie, $ vim) then open by default autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif "open if file is a directory
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " close if nerdtree is last window
-
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -59,10 +52,6 @@ set scrolloff=999
 
 " change location of swap files
 set directory=/tmp
-
-"scrolling for urxvt
-set mouse=a
-set ttymouse=xterm2
 
 " disable button clicks
 :noremap <LeftMouse> <nop>
