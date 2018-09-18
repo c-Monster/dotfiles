@@ -45,6 +45,7 @@ set shiftwidth=4
 colorscheme koehler
 
 " show line numbers
+set number
 set relativenumber
 
 " keep cursor in center of screen
