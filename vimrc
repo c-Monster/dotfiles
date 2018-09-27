@@ -8,15 +8,15 @@ call plug#end()
 " plugin options
 
 " syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%* " placement for checking
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0 " change when to check syntax
-let g:syntastic_go_checkers = ['govet', 'errcheck', 'go'] " set go checkers
-let g:syntastic_quiet_messages = {'level':'warnings'}
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%* " placement for checking
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0 " change when to check syntax
+"let g:syntastic_go_checkers = ['govet', 'errcheck', 'go'] " set go checkers
+"let g:syntastic_quiet_messages = {'level':'warnings'}
 let python_highlight_all=1 " python coloring
 syntax on
 
