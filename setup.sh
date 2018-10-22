@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/old_dotfiles             # old dotfiles backup directory
-files="vimrc variables tmux.conf alacritty.yml"    # list of files/folders to symlink in homedir
+files="bashrc variables aliases system vimrc tmux.conf alacritty.yml"    # list of files/folders to symlink in homedir
 configFiles=""	# folders to be placed in ./config/[here]
 
 ##########
