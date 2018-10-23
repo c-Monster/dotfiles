@@ -32,19 +32,19 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # add standard aliases
-if [ -f ~/.aliases]; then
+if [ -f ~/.aliases ]; then
 
 	. ~/.aliases
 fi
 
 # add standard variables
-if [ -f ~/.variables]; then
+if [ -f ~/.variables ]; then
 
 	. ~/.variables
 fi
 
 # add system-specific items
-if [ -f ~/.system]; then
+if [ -f ~/.system ]; then
 
 	. ~/.system
 fi
